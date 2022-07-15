@@ -11,7 +11,7 @@ export const LoginScreen = () => {
   const state = useSelector((state) => state.ui);
   const { msgError, loading } = state;
   const [formValues, handleInputChange] = useForm({
-    email: 'pedroball0120@gmail.com',
+    email: 'pedro@gmail.com',
     password: '123456',
   });
   const { email, password } = formValues;
@@ -31,8 +31,7 @@ export const LoginScreen = () => {
     dispatch(removeError());
     return true;
   };
-  const handleGoogleLogin = (e) => {
-    e.preventDefault();
+  const handleGoogleLogin = () => {
     dispatch(startGoogleLogin());
   };
   return (

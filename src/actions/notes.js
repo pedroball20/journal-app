@@ -3,6 +3,7 @@ import { db } from '../firebase/firebase-config';
 import { fileUpload } from '../helpers/fileUpload';
 import { loadNotes } from '../helpers/loadNotes';
 import { types } from '../types/types';
+
 //react-journal
 export const startNewNote = () => {
   return async (dispatch, getState) => {
